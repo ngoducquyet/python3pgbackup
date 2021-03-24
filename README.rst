@@ -8,22 +8,21 @@ Preparing for Development
 	4. Fetch development dependencies make install
 	5. Activate virtualenv: pipenv shell
 Usage
-Pass in a full database URL, the storage driver, and destination.
-S3 Example w/ bucket name:
-<space><space>
+
+	1. Pass in a full database URL, the storage driver, and destination.
+	1.1 S3 Example w/ bucket name:
 ::
 $ pgbackup postgres://bob@example.com:5432/db_one --driver s3 backups
-<space><space>
-Local Example w/ local path:
+	1.2 Local Example w/ local path:
 ::
 $ pgbackup postgres://bob@example.com:5432/db_one --driver local /var/local/db_one/backups
-<space><space>
-Running Tests
+
+	1.3 Running Tests
 Run tests locally using make if virtualenv is active:
 ::
 $ make
-<space><space>
-If virtualenv isn’t active then use:
+
+	1.4 If virtualenv isn’t active then use:
 ::
 $ pipenv run make
 

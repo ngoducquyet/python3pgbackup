@@ -9,3 +9,5 @@ pipenv --python $(which python3.6)
 pipenv shell
 
 (pgbackup-E7nj_BsO) $ pipenv install --dev pytest
+(pgbackup-E7nj_BsO) $ pipenv install --dev pytest-mock
+(pgbackup-E7nj_BsO) $ pipenv install boto3
